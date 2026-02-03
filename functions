@@ -1,0 +1,147 @@
+# Create a function in Python
+# Write a program to create a function that takes two arguments, 
+# # name and age, and prints their values
+# def function(name,age):
+#     print(f"name of the function{name} and  age is {age}")
+# function('jatinn',18)
+
+# # Q-2 Write a program to create a function func1() 
+# # that accepts a variable number of arguments 
+# # and prints each of their values.
+
+# def func1(*args):
+#   for i in args:
+#     print(i)
+# func1(10, 20)
+# func1("hello", 3.14, True)
+# func1(1, 2, 3, 4, 5)
+
+# # Q-3 Write a function calculation() that accepts
+# #two variables and calculates both their addition and subtraction
+# # The function should then return both the sum and 
+# # the difference in a single return statement.
+# def cal(a,b):
+#     return a+b,a-b
+# x=cal(40,10)
+# print(x)
+
+# # Q-4 Write a program to create a function show_employee() 
+# # with the following specifications:
+# # It should accept the employee’s name and salary.
+# # It should display both the name and salary.
+# # If the salary is not provided in the function call,
+# #  it should default to 9000
+# def show_employee(name,salary=9000):
+#     print("emplyee name",name)
+#     print(f"{name}'s  salary",salary)
+# show_employee('jessa',10000)
+# show_employee('jatiin')
+
+# #  Q-5 Create a program with nested functions to perform 
+# # an addition calculation as follows:
+# # Define an outer function that accepts two parameters,
+# #  a and b.
+# # Inside this outer function,
+# #  define an inner function that calculates the sum of a and b.
+# # The outer function should then add 5 to this sum.
+# # Finally, the outer function should return the resulting value.”
+# def fun1(a,b):
+#     def fun2():
+#         return a+b
+#     return fun2()+5
+# print(fun1(10,20))
+
+# # Q-6 Write a program to create a recursive function that
+# #  calculates the sum of numbers from 0 to 10.
+# # A recursive function is a function that calls itself repeatedly
+# def sum_numbers(n):
+#     if n == 0: # stop infinite recursion
+#         return 0
+#     return n + sum_numbers(n - 1)
+# result = sum_numbers(10)
+# print(result)
+
+# # 7th  - Below is the function display_student(name, age).
+# #  Assign a new name show_student(name, age) to it 
+# # and call it using the new name
+# def display_student(name,age):
+#     print("name",name)
+#     print("age",age)
+# show_student=display_student
+# show_student("jatin",18)
+
+# # 8th Generate a Python list of all the even numbers between 4 to 30
+# def even_num():
+#     even=[]
+#     for i in range(4,31):
+#         if(i%2==0):
+#             even.append(i)
+#     return even
+# print(even_num())
+
+# # 9th Find the largest item from list
+# x = [4, 6, 8, 24, 12, 2]
+# max=x[0]
+# for  i in x:
+#     if(i>max):
+#         max=i
+# print(max)
+
+# #  10th - Define a function describe_pet(animal_type, pet_name) that prints a description of a pet. 
+# # Call this function using both positional and keyword arguments
+# def describe_pet(animal_type,pet_name):
+#     print(animal_type,pet_name)
+# describe_pet(pet_name='leo',animal_type='dog')
+# describe_pet('dog','jerry')
+
+# #11-Create a function with keyword argument
+# def keywords(**kwargs):
+#     return kwargs
+# x=keywords(pet_type='dog',petname='leo',petbreed='labra')
+# print(x)
+
+# # 12th Modifies global variable
+# a=10
+# def fun():
+#     global a
+#     a=20
+#     print("inside",a)
+# fun()
+# print("outside",a)
+
+# # 13th Write a recursive function to calculate the factorial
+# def factorial(n):
+#     if n==1:
+#         return 1
+#     return n*factorial(n-1)
+# print(factorial(5))
+
+# # 14th Create a lambda function that squares a given number
+# a=lambda n:n*n
+# print(a(2))
+
+# # 15th Use a lambda with the filter() function to get
+# #  all even numbers from a list
+# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# result = list(filter(lambda x: x % 2 == 0, nums))
+# print(result)
+
+# # 16th Use a lambda with the map() function 
+# # to double each element in a list
+# numbers = [1, 2, 3, 4, 5]
+# result=list(map(lambda x:x*x,numbers))
+# print(result)
+
+# # 17th Use a lambda with the sorted() function
+# #  to sort a list of tuples based on the second element
+# data = [('apple', 5), ('banana', 2), ('cherry', 8), ('date', 1)]
+# result = sorted(data, key=lambda x: x[1])
+# print(result)
+
+# # 18 high order question
+# def jatin(x, y):
+#     return x + y
+# def jai(a, func):
+#     return func(a, 5)
+# print(jai(10, jatin))
+# print(jatin(10,15))
