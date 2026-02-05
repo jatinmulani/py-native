@@ -1,0 +1,206 @@
+#1- # 1-10 print in while loop
+# a=1
+# while a<=10:
+#     print(a)
+#     a+=1
+
+#  2 - # print the following pattern 
+# # 1 
+# # 1 2 
+# # 1 2 3 
+# # 1 2 3 4 
+# # 1 2 3 4 5
+# for i in range(1,6):
+#     for j in range(1,i+1):  # i se leke , i+1 mtlb suru m i =1 hua hai fir usme plus 1 ilsiye wo suru m ek baar chala 
+#         print(j,end="")
+#     print("")
+
+# #  3 -Calculate sum of all numbers from 1 to a given number
+# sum =0
+# for i in range(1,11):
+#     sum=sum+i
+# print(sum)
+
+
+# # 4th table 
+# n=2
+# for i in range(1,11):
+#   prod =n*i
+#   print(prod)
+
+# # 5# Display numbers from a list using a loop
+# Write a Python program to display 
+# only those numbers from a list that satisfy the following conditions
+# The number must be divisible by five
+# If the number is greater than 150, then skip it
+# #  and move to the following number
+# # If the number is greater than 500, then stop the loop
+# numbers = [12, 75, 150, 180, 145, 525, 50]
+# for i in numbers:
+#     if(i>500):
+#         break
+#     elif(i>150):
+#         continue
+#     elif(i%5==0):
+#         print(i)
+
+# #6- Count the total number of digits in a number
+# n=75869
+# count = 0
+# while(n>0):
+#     count+=1
+#     n=n//10
+# print(count)
+
+# #7th 
+# # 5 4 3 2 1 
+# # 4 3 2 1 
+# # 3 2 1 
+# # 2 1 
+# # 1
+# x=5
+# for i in range(1,6):
+#     temp=x
+#     for j in range(1,6-i+1):
+#         print(temp,end="")
+#         temp-=1
+#     x-=1
+#     print("") 
+
+# # 8th Print list in reverse order using a loop
+# list1 = [10, 20, 30, 40, 50]
+# rev=list1[::-1]
+# for i in rev:
+#     print(i)
+
+# # 9th  Display numbers from -10 to -1 using for loop
+# for i in range(-10,0,+1):
+#     print(i)
+
+# #  10th Display a message “Done” after the successful execution of the for loop
+# for i in range(5):
+#     print(i)
+# print('done!')
+
+# # 11th Print all prime numbers within a range
+# start=25
+# end=50
+# for num in range(start,end):
+#     if(num>1):
+#         for i in range(2,num):
+#             if(num%i==0):
+#                 break
+#         else:
+#             print(num)
+   
+# # 12th Display Fibonacci series up to 10 terms
+# n=10
+# a=0
+# b=1
+# for i in range(1,n+1):
+#     print(a)
+#     a,b=b,a+b
+#     i=i+1
+
+# # 13t Find the factorial of a given number
+# prod=1
+# for i in range(5,1,-1):
+#     prod=prod*i
+# print(prod)
+
+# # 14th Reverse a integer number
+# n=1234
+# rev =0
+# while n>0:
+#     rev=rev*10+n%10
+#     n=n//10
+# print(rev)  
+
+# # 15th Print elements from a given list
+# #  present at odd index positions
+# my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# for i in range(len(my_list)):
+#     if(i%2!=0):
+#         print(my_list[i])
+
+# # 16th  Calculate the cube of all numbers from 1 to a given number
+# n = int(input('enter from user : '))
+# a=0
+# for i in range(1,n+1):
+#     a+=1
+#     print(f"cube of {a}  ",i*i*i)
+
+# # 17  Find the sum of a series of a number up to n terms
+# num=2
+# series=5
+# term = 0
+# total=0
+# for i in range(series):
+#     term=term*10+num
+#     total+=term
+# print(total)
+
+# # 18th 
+# * 
+# * * 
+# * * * 
+# * * * * 
+# * * * * * 
+# * * * * 
+# * * * 
+# * * 
+# *
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print('*',end=" ")
+#     print()
+# for i in range(1,6+1):
+#     for j in range(1,6-i):
+#         print('*',end=' ')
+#     print()
+
+# # 19th  The multiplication table from 1 to 10 is a table that 
+# # shows the products of numbers from 1 to 10
+# for i in range(1, 11):
+#     for j in range(1, 11):
+#         print(i * j, end="\t")
+#     print( )
+
+# # # 20th 
+# # 1  
+# # 2 3  
+# # 4 5 6  
+# # 7 8 9 10  
+# # 11 12 13 14 15
+# x=1
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print(x,end=" ")
+#         x+=1
+#     print()
+
+# # 21th flatten a list
+# nested_list = [1, [2, 3], [4, 5, 6], 7, [8, 9]]
+# rev_list=[]
+# for i in nested_list:
+#     if(type(i)==list):
+#         for j in  i :
+#             rev_list.append(j)
+#     else:
+#         rev_list.append(i)
+# print(rev_list)
+
+# # 22th 
+# #  Find largest and smallest digit in a number
+# n = 5839214
+# largest = 0
+# smallest = 9
+# while n > 0:
+#     digit = n % 10
+#     if digit > largest:
+#         largest = digit
+#     if digit < smallest:
+#         smallest = digit
+#     n =n//10
+# print("Largest digit:", largest)
+# print("Smallest digit:", smallest)
